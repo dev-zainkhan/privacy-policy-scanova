@@ -58,6 +58,11 @@
     border-top: 1px solid var(--border);
   }
   h2:first-of-type { border-top: none; padding-top: 0; }
+  h3 {
+    color: var(--accent);
+    font-size: 1.05rem;
+    margin: 16px 0 8px;
+  }
   p { margin-bottom: 12px; }
   ul { margin: 0 0 14px 22px; }
   li { margin-bottom: 6px; }
@@ -84,7 +89,6 @@
     h1 { font-size: 1.6rem; }
   }
 </style>
-<base target="_blank">
 </head>
 <body>
 
@@ -94,70 +98,76 @@
   <div class="card">
 
     <h1>Scanova Privacy Policy</h1>
-    <p class="meta">Effective date: October 12, 2026 &nbsp;|&nbsp; Last updated: October 12, 2026</p>
+    <p class="meta">Effective date: October 13, 2026 &nbsp;|&nbsp; Last updated: October 13, 2026</p>
 
-    <p>Scanova ("the app") is a document-scanning and PDF utility. This policy explains what information is handled when you use the app, why it is handled, and the choices available to you.</p>
+    <p>Scanova ("the app", "we") is a document-scanning and PDF utility for Android. This policy explains what information is handled when you use the app, why, and the choices available to you.</p>
 
     <h2>Summary</h2>
     <ul>
-      <li>Scanned pages, document names, and PDFs are processed and stored on your device by the app. The app does not operate a document-upload or account service.</li>
-      <li>If you choose to share or save a file outside the app, the file is sent or saved using the destination and method you select.</li>
-      <li>The app includes Google Mobile Ads. Google may collect device, advertising, interaction, and diagnostic information to provide and measure ads and help prevent fraud.</li>
-      <li>You can delete documents in the app. Files you have saved outside the app must be deleted from their destination separately.</li>
+      <li>Your scans, document names, and PDFs are processed and stored on your device. We do not upload them to any server, and we do not operate accounts.</li>
+      <li>The app shows ads using Google Mobile Ads (AdMob). Google may collect device and advertising information to show and measure ads and to prevent fraud.</li>
+      <li>Where the law requires it (for example in the EEA, UK, and Switzerland), the app asks for your consent before personalized ads are shown. You can change that choice at any time in <strong>Settings &rarr; Ad privacy choices</strong>.</li>
+      <li>You can delete your documents in the app at any time. Files you saved or shared outside the app must be deleted from their destination separately.</li>
     </ul>
 
     <h2>Information Handled by Scanova</h2>
 
-    <h2 style="font-size:1.05rem; border-top:none; padding-top:0; margin-top:16px;">Documents and Files</h2>
-    <p>When you scan a document, the app uses the camera through its document-scanning component. Scanned page images, page details, and document names are stored in the app's private storage on your device. The app's scanning and PDF features process these files on your device; the app does not upload your scans or imported PDFs to a Scanova server.</p>
-    <p>When you choose a PDF using the system file picker, the app receives access to the file you selected so it can perform the requested operation. The app processes the selected PDF on your device. The operating system or file provider may apply its own terms and privacy practices.</p>
-    <p>The app stores basic preferences and, on Android, may remember a folder you selected for saving PDFs. These are stored on your device.</p>
-    <p>Documents can contain personal or sensitive information that you choose to scan or import. Avoid scanning or sharing information unless you are comfortable doing so.</p>
+    <h3>Documents and files</h3>
+    <p>When you scan a document, the app opens the camera through Google's on-device document scanner. Scanned page images, page details, and document names are stored in the app's private storage on your device. Scanning and all PDF tools (merge, split, compress, and lock) run on your device; the app does not upload your scans or imported PDFs.</p>
+    <p>When you choose a PDF using the system file picker, the app can access only the file you selected, and only to perform the operation you requested.</p>
+    <p>The app stores basic preferences (such as the library layout) and, if you save a PDF, the folder you selected for saving. These are stored on your device.</p>
+    <p>Passwords you enter in the Lock PDF tool are used only to encrypt that PDF on your device. They are not stored or sent anywhere.</p>
 
-    <h2 style="font-size:1.05rem; border-top:none; padding-top:0; margin-top:16px;">Google Mobile Ads</h2>
-    <p>The app integrates the Google Mobile Ads SDK (AdMob) for banner and interstitial advertising. Although the app currently uses Google's test ad IDs, the SDK is initialized by the app. Google's published disclosure for the Mobile Ads SDK states that it may automatically collect and share:</p>
+    <h3>Advertising (Google Mobile Ads)</h3>
+    <p>The app uses the Google Mobile Ads SDK to show banner and interstitial ads. According to Google's disclosure for this SDK, it may automatically collect and share:</p>
     <ul>
-      <li>IP address, which may be used to estimate a device's general location;</li>
-      <li>interactions with the app, such as app launches, taps, and ad views;</li>
+      <li>IP address, which may be used to estimate the general location of your device;</li>
+      <li>app interactions, such as app launches, taps, and ad views;</li>
       <li>diagnostic information about app and SDK performance; and</li>
-      <li>device or account identifiers, such as the Android advertising ID and app set ID, and other identifiers where applicable.</li>
+      <li>device identifiers, such as the Android advertising ID and app set ID.</li>
     </ul>
-    <p>Google describes these uses as supporting advertising, analytics, and fraud prevention, and states that SDK-collected data is encrypted in transit using TLS. The precise data handling may depend on the SDK version, platform, ad settings, region, and any ad products or features enabled. Google handles information it collects under its own privacy policy and terms. See <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google's Privacy Policy</a> and <a href="https://developers.google.com/admob/android/privacy/play-data-disclosure" target="_blank" rel="noopener">Google's information about Mobile Ads SDK data disclosures</a>.</p>
-    <p>You can reset or delete the Android advertising ID through your device's settings. Google's privacy policy explains additional controls for Google services and advertising.</p>
+    <p>Google uses this information for advertising, analytics, and fraud prevention, and states that it is encrypted in transit. Google handles this information under its own policies. See <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google's Privacy Policy</a>, <a href="https://policies.google.com/technologies/partner-sites" target="_blank" rel="noopener">how Google uses information from apps that use its services</a>, and <a href="https://developers.google.com/admob/android/privacy/play-data-disclosure" target="_blank" rel="noopener">Google's Mobile Ads SDK data disclosure</a>.</p>
+
+    <h3>Ad consent</h3>
+    <p>If you are in a region where consent is required, the app shows a consent message provided by Google (the User Messaging Platform) the first time it starts. Depending on your choice, Google shows personalized or non-personalized ads, or, where required, limited ads. You can review or change your choice at any time from <strong>Settings &rarr; Ad privacy choices</strong> in the app.</p>
+    <p>You can also reset or delete your Android advertising ID in your device's settings (Settings &rarr; Privacy &rarr; Ads, or Settings &rarr; Google &rarr; Ads, depending on your device).</p>
+
+    <h3>What we do not collect</h3>
+    <p>We do not create accounts, and we do not collect your name, email address, contacts, location, or microphone audio. We do not use our own analytics or crash-reporting services.</p>
 
     <h2>How Information Is Shared</h2>
-    <p>Scanova does not provide scanned documents or imported PDFs to an app-operated server. The app's advertising SDK sends the advertising-related information described above to Google. Google may process it as described in Google's policies.</p>
-    <p>If you use the app's Share feature, the operating system opens a sharing interface so you can choose a recipient or app. If you save a PDF to a folder, it is saved to the location you select. Those recipients, apps, and storage providers handle information under their own policies. Sharing or saving a document is your choice.</p>
+    <p>We do not receive or share your documents. Advertising-related information is collected directly by Google as described above.</p>
+    <p>If you use <strong>Share</strong>, Android opens a sharing screen so you can choose a recipient or app. If you use <strong>Save to Phone</strong>, the PDF is saved to the folder you choose. The recipients, apps, and storage providers you choose handle files under their own policies.</p>
 
-    <h2>Permissions and Access</h2>
+    <h2>Permissions</h2>
     <ul>
-      <li><strong>Camera:</strong> used when you start scanning a document. Camera access is provided by the operating system and is not used by the app for continuous background capture.</li>
-      <li><strong>Selected files:</strong> the app can access PDFs you choose through the system file picker to perform the operation you requested.</li>
-      <li><strong>Selected save folder (Android):</strong> if you choose to save a PDF, Android asks you to select a folder. The app uses that folder permission to create the PDF you requested and may remember the selected folder for later saves. You can revoke folder access in Android settings.</li>
+      <li><strong>Camera:</strong> used by Google's document scanner only while you are scanning.</li>
+      <li><strong>Selected files:</strong> PDFs you pick through the system file picker, for the operation you requested.</li>
+      <li><strong>Selected save folder:</strong> when you first save a PDF, Android asks you to pick a folder. The app remembers it for later saves. You can choose a different folder at any time, and revoke access in Android settings.</li>
+      <li><strong>Internet and advertising ID:</strong> used by Google Mobile Ads to load and measure ads.</li>
     </ul>
-    <p>The app does not request an account, contacts, microphone, or location access in its current configuration.</p>
 
     <h2>Retention and Deletion</h2>
-    <p>Your in-app documents and preferences remain in the app's local storage until you delete them or remove the app. To delete a document, use its delete control in Scanova. Removing the app normally removes its private app data, subject to your device's operating-system behavior and backups.</p>
-    <p>PDFs that you save to a user-selected folder, share with another app, or otherwise copy outside Scanova are separate copies. Delete those copies using the relevant file manager, destination app, or storage provider.</p>
-    <p>Google controls retention of information collected by its advertising services. See Google's Privacy Policy and advertising controls for details.</p>
+    <p>Your documents and preferences stay on your device until you delete them in the app or uninstall the app. To delete a document, open it and tap the delete button. Uninstalling the app removes its private data from your device.</p>
+    <p>PDFs you saved to a folder or shared with another app are separate copies. Delete them with your file manager or in the app you shared them to.</p>
+    <p>Google controls how long it keeps information collected through its advertising services. See Google's Privacy Policy for details.</p>
 
     <h2>Security</h2>
-    <p>The app stores its working documents in private app storage provided by the operating system and processes them on the device. No method of storage or transmission is completely secure. When Google Mobile Ads handles data, Google states that it encrypts that data in transit using TLS. Files shared or saved outside the app are subject to the security practices of the destination you choose.</p>
+    <p>The app keeps working documents in private app storage provided by Android and processes them on your device. No method of storage or transmission is completely secure. Files you share or save outside the app are subject to the security of the destination you choose.</p>
 
     <h2>Children's Privacy</h2>
-    <p>Scanova is a general-purpose utility and is not specifically directed to children. The app does not create user accounts or ask children to provide personal information. Google Mobile Ads may automatically handle device and advertising information as described above. If the app is distributed to children or includes children in its target audience, its advertising and age-related settings must comply with the requirements that apply to that audience and location. A parent or guardian may contact us with a concern using the contact details below.</p>
+    <p>Scanova is a general-purpose utility and is not directed to children under 13. We do not knowingly collect personal information from children. If you believe a child has provided personal information through the app, contact us using the details below.</p>
 
     <h2>International Users</h2>
-    <p>The app's local document processing does not send your documents to Scanova. Google Mobile Ads may process advertising-related information as described in Google's policies and in accordance with its applicable terms and legal obligations. Privacy rights and requirements vary by location.</p>
+    <p>Your documents are processed on your device and are not transferred by us. Google may process advertising-related information in other countries as described in its policies. Your privacy rights depend on where you live.</p>
 
     <h2>Changes to This Policy</h2>
-    <p>This policy may be updated when the app's features, SDKs, or data practices change. The effective and updated dates at the top of this document indicate the latest revision. If data practices change, the app's store disclosures should be updated as well.</p>
+    <p>We may update this policy when the app's features or data practices change. The dates at the top show the latest revision.</p>
 
     <hr>
 
     <h2>Contact</h2>
-    <p>For privacy questions or concerns, contact us at:</p>
+    <p>For privacy questions, requests, or concerns, contact us at:</p>
     <p class="contact"><strong>Email:</strong> <a href="mailto:workwithzain02@gmail.com">workwithzain02@gmail.com</a></p>
 
     <footer>Scanova &mdash; Privacy Policy &copy; 2026</footer>
